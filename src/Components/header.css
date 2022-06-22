@@ -1,0 +1,12 @@
+.header{
+    width: 100%;
+}
+
+.header-auth{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 15px;
+}

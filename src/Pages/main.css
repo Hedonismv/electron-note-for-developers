@@ -1,0 +1,11 @@
+.mainBlock{
+    text-align: center;
+    padding-top: 30%;
+}
+
+.signBtn{
+    padding: 15px 80px;
+    border: none;
+    background-color: yellow;
+    cursor: pointer;
+}

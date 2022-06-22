@@ -1,0 +1,17 @@
+.stackBlock{
+    max-width: 760px;
+    margin: auto;
+}
+
+.stackBlockElement{
+    padding: 40px 100px;
+    margin: 10px 0;
+    background-color: lightslategray;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+}
+
+.stackBlockElement span{
+    color: white;
+}
