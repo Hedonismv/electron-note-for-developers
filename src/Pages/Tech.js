@@ -9,15 +9,15 @@ const Tech = () => {
 	return (
 		<div>
 			<Header/>
-			<div className={'stackBlock'}>
+			<div className={'container m-auto'}>
 				<Link to={'/frontend'}>
-					<div className={'stackBlockElement'}>
-						<span>Frontend</span>
+					<div className={'stackBlockElement px-9 py-10 bg-blue-800'}>
+						<span className={'text-3xl'}>Frontend</span>
 					</div>
 				</Link>
 				<Link to={'/backend'}>
-					<div className={'stackBlockElement'}>
-						<span>Backend</span>
+					<div className={'stackBlockElement px-9 py-10 bg-blue-800'}>
+						<span className={'text-3xl'}>Backend</span>
 					</div>
 				</Link>
 			</div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import './header.css';
 import {useDispatch, useSelector} from "react-redux";
 import {signOut} from "firebase/auth"
 import {auth} from "../firebase/fireConfig";
@@ -16,11 +15,13 @@ const Header = () => {
 		dispatch(logoutUser)
 	}
 
+
 	return (
-		<div className={'header'}>
-			<div className={'header-auth'}>
-				<span className={'Secondary-Color'}>{loggedUser && loggedUser.displayName}</span>
-				<span style={{cursor: "pointer"}} className={'Secondary-Color'} onClick={() => logout()}>Logout</span>
+		<div className={'w-full'}>
+			<div className={'flex m-auto justify-end items-center p-5 gap-4'}>
+				<span className={'text-zinc-500'}>{loggedUser && loggedUser.displayName}</span>
+				<img className={'rounded-full w-10'} src={loggedUser && loggedUser.photoURL} alt={'userPhoto'}/>
+				<span className={'text-zinc-500 cursor-pointer'} onClick={() => logout()}>Logout</span>
 			</div>
 		</div>
 	);

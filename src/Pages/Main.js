@@ -9,7 +9,7 @@ const Main = () => {
 	const [signInWithGoogle] = useSignInWithGoogle(auth)
 
 	return (
-		<div className={'mainBlock'}>
+		<div className={'flex justify-center h-screen items-center'}>
 			<button className={'signBtn'} onClick={() => signInWithGoogle()}>Sign In with Google</button>
 		</div>
 	);
